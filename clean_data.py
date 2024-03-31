@@ -2,7 +2,7 @@ with open('/path/to/your/text/data', 'r', encoding='utf-8') as f:
     text = f.read()
 print("length of dataset in characters: ", len(text))
 
-# here are all the unique characters that occur in this text
+# here are all the unique characters that occur in this text, run this separately, copy the special chracters
 chars = sorted(list(set(text)))
 vocab_size = len(chars)
 print(''.join(chars))
