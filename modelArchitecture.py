@@ -48,7 +48,7 @@ parser.add_argument('--dropout', type=float, default=config.dropout)
 args = parser.parse_known_args(sys.argv[1:])[0]
 config.__dict__.update(args.__dict__)
 
-torch.manual_seed(1337)
+torch.manual_seed(1409)
 
 # Load and preprocess data
 with open(config.data_path, 'r', encoding='utf-8') as f:
